@@ -1,0 +1,29 @@
+:root {
+    --primary: white;
+    --secondary: black;
+}
+
+body{
+    background-color: var(--secondary);
+}
+
+body.light {
+    --primary: black;
+    --secondary: white;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary);
+}
+
+.card{
+    width: 25%;
+}
+    
+
+.card-img-top{
+    width: 100%;
+    height: 400px;
+}

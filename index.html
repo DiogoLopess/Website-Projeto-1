@@ -6,57 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Página Principal</title>
 </head>
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 top-header">
+      <div class="container main-header">
+        <h1>Cine Scape</h1>
+        <br>
+        <h4>Um jovem curioso se encontra 
+          preso num cinema abandonado.
+          Resolva enigmas enquantos aprendes 
+          sobre a historia dos anos 90’ nesse 
+          Escape Room educacional.</h4>
+        <br>
+        <button id="button-main">Login</button>
+      </div>
+      
         <nav class="navbar navbar-expand-lg p-1 header-navbar" id="header">
             <a class="navbar-brand" href="#">
-                <img src="logo_white.png" id="logo-header" height="40">
+                <img id="logo-header" src="assets/logo_white.png" height="40">
             </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#responsive-navbar">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <svg viewBox="0 0 24 24" id="burger-icon" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 18L20 18" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 12L20 12"  stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 6L20 6"  stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
             </button>
           
             <div class="collapse navbar-collapse text-center" id="responsive-navbar">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link item-nav" href="#">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Niveis</a>
+                    <a class="nav-link item-nav" href="#">Niveis</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Sobre</a>
+                <li class="nav-item active" >
+                    <a class="nav-link item-nav" href="#">Sobre</a>
                 </li>
                 <li class="nav-item active button-header">
                   <a class="nav-link" href="#">Login</a>
                 </li>
-                <li class="nav-item active icon-header" id="logo-header">
-                  <svg xmlns="http://www.w3.org/2000/svg" id="icon-header" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                  </svg>
+                <li class="nav-item active item-icon">
+                  <img class="icon-header" id="icon-header">
                 </li>
               </ul>
             </div>
-          </nav>
+        </nav>
+    </div>
+    <div class="container-fluid p-0 levels">
+      <iframe src="html/levels.html" frameborder="0" id="html-content"></iframe>
     </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="header.js"></script>
+    
+    <script src="js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
