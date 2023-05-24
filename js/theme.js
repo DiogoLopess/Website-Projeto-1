@@ -1,10 +1,6 @@
 let logo = document.getElementById("logo-header")
 let icon = document.getElementById("icon-header")
 let burger = document.getElementById("burger-icon")
-let html = document.getElementById("html-content")
-
-const iWindow = html.contentWindow;
-const iDocument = iWindow.document;
 
 let darkmode = true
 
@@ -24,9 +20,16 @@ function HeaderTheme(){
     }
 
     document.body.classList.toggle("light")
-    iDocument.body.classList.toggle("light")
 
-    console.log(iDocument)
+    let html_levels = document.getElementById("html-levels")
+    let iWindow = html_levels.contentWindow;
+    let iDocument = iWindow.document;
+    iWindow.document.body.classList.toggle("light")
+
+    let html_group = document.getElementById("html-group")
+    iWindow = html_group.contentWindow;
+    iDocument = iWindow.document;
+    iWindow.document.body.classList.toggle("light")
 
     if(document.body.classList.toggle == "light"){
         burger.innerHTML = `

@@ -6,6 +6,7 @@
 
 body{
     background-color: var(--secondary);
+    transition: 1s;
 }
 
 body.light {
@@ -14,6 +15,7 @@ body.light {
 }
 
 .header-navbar{
+    position: fixed;
     margin: 15px;
     border-radius: 15px;
     background-color: var(--secondary);
@@ -133,15 +135,30 @@ body.light {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .levels{
-    background-color: blue;
     height: 100vh;
 }
 
 iframe{
     width: 100%;
     height: 100%;
+    overflow: visible;
 }
+
+hr{
+    border: 1px solid red;
+}
+
+.spacer{
+    display: none;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    .spacer{
+        display: inline-block;
+    }
+  }
