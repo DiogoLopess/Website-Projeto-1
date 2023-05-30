@@ -1,15 +1,14 @@
-let logo = document.getElementById("logo-header")
-let icon = document.getElementById("icon-header")
-let burger = document.getElementById("burger-icon")
-
 let darkmode = true
 
-icon.addEventListener("click", function(){
-    HeaderTheme()
+let theme_homepage = document.getElementById("theme-homepage")
+theme_homepage.addEventListener("click", function(){
+    HomepageTheme()
 })
 
 
-function HeaderTheme(){
+function HomepageTheme(){
+    let logo = document.getElementById("logo-header")
+    let burger = document.getElementById("burger-icon")
 
     if(darkmode) {
         logo.src = "assets/logo_black.png"
