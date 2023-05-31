@@ -5,6 +5,8 @@ let date = document.getElementById("date")
 let local = document.getElementById("local")
 let sex = document.getElementById("sex")
 
+let loginButton = document.getElementById("login-button")
+
 let Change_Mode = document.getElementById("change-mode")
 Change_Mode.addEventListener("click", function(){
     ChangeMode()
@@ -30,6 +32,8 @@ function ChangeMode(){
         local.style.display = "none"
         sex.style.display = "none"
 
+        loginButton.innerHTML = "<h4>Entrar</h4>"
+
         login = true
     }else{
         Change_Mode.innerHTML = `<h4>Login</h4>`
@@ -48,6 +52,8 @@ function ChangeMode(){
         date.style.display = "flex"
         local.style.display = "flex"
         sex.style.display = "flex"
+
+        loginButton.innerHTML = "<h4>Registar</h4>"
 
         login = false
     }
